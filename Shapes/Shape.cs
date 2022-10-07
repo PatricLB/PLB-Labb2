@@ -5,18 +5,19 @@ namespace Shapes
 {
     public abstract class Shape
     {
+        private static Random randomShape = new Random();
+        private static  Random randomSize = new Random();
         public abstract Vector3 Center { get; }
         public abstract float Area { get; }
 
         public static Shape GenerateShape()
         {
-            Random randomShape = new Random();
-            Random randomSize = new Random();
+            
             float randomX = randomSize.NextSingle() * 10;
             float randomY = randomSize.NextSingle() * 10;
             float randomZ = randomSize.NextSingle() * 10;
             float randomWidth = randomSize.NextSingle() * 10;
-            float randomInputRadie = randomSize.Next(1, 15);
+            float randomInputRadie = randomSize.Next(1, 20);
 
             Shapes form = (Shapes)randomShape.Next(0, 6);
 
