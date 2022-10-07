@@ -7,6 +7,7 @@ namespace Shapes
 
         private Vector2 _size;
         public bool isSquare = false;
+        private string returnObjectString;
 
         public override float Circumference
         {
@@ -42,11 +43,11 @@ namespace Shapes
 
         public override string ToString()
         {
-            string returneraRektangel = $"@({_center.X:f2}, {_center.Y:f2}): w = {this._size.X:f2} h = {this._size.Y:f2}";
+            returnObjectString = $"@({_center.X:f2}, {_center.Y:f2}): w = {this._size.X:f2} h = {this._size.Y:f2}";
 
-            returneraRektangel = isSquare ? "square " + returneraRektangel : "rectangle  " + returneraRektangel;
+            returnObjectString = isSquare ? "square " + returnObjectString : "rectangle  " + returnObjectString;
 
-            return returneraRektangel;
+            return returnObjectString;
 
         }
 
