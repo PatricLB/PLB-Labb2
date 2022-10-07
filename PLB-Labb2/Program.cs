@@ -16,3 +16,5 @@ for (int i = 0; i < shapes.Length - 1; i++)
 }
 totalArea /= shapes.Length - 1;
 Console.WriteLine($"\nMedelvärdet på arean är: {totalArea:f2} enheter");
+
+//Commit test
