@@ -13,9 +13,15 @@ namespace Shapes
             get
             {
                 return (float)(2 * Math.PI * _radius);
-
             }
+        }
 
+        public override float Area
+        {
+            get
+            {
+                return (float)(Math.PI * Math.Pow(_radius, 2));
+            }
         }
 
         public Circle(Vector2 center, float radius)
@@ -27,7 +33,6 @@ namespace Shapes
             _center = vector2till3;
 
             _radius = radius;
-            _area = (float)(Math.PI * (Math.Pow(radius, 2)));
         }
 
         public override string ToString()

@@ -25,7 +25,6 @@ namespace Shapes
             Vector3 randomVector3Position = new Vector3(randomX, randomY, randomZ);
             Vector3 randomVector3WidthLengthDepth = new Vector3(randomX, randomY, randomZ);
 
-            // Testing commit
 
             if (form == Shapes.circle)
             {
@@ -51,10 +50,7 @@ namespace Shapes
             {
                 return new Sphere(randomVector3Position, randomInputRadie);
             }
-
         }
-
-
     }
 
     enum Shapes

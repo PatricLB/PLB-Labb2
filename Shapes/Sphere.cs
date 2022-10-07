@@ -6,7 +6,6 @@ namespace Shapes
     {
 
         private float _radius;
-        private float _begränsningsarea;
         public override float Volume
         {
             get
@@ -15,11 +14,11 @@ namespace Shapes
             }
         }
 
-        public float Begränsningsarea
+        public override float Area
         {
             get
             {
-                return _begränsningsarea = ((float)(4 * Math.PI * Math.Pow(_radius, 2)));
+                return ((float)(4 * Math.PI * Math.Pow(_radius, 2)));
             }
         }
 
@@ -27,7 +26,6 @@ namespace Shapes
         {
             _center = center;
             _radius = radius;
-            _area = ((float)(4 * Math.PI * Math.Pow(_radius, 2)));
 
         }
         public override string ToString()
